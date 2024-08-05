@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="4b10d795-54bd-414e-803a-0486af8a3d88"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording1"
+	namespace="EMSTest">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="31;23"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="6dbef3ae-9616-48ba-ba21-623f244b4137"
+		sx="-232"
+		sy="1024"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4dfb190a-2581-4e43-9407-eba53591c4c8"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="-263,1001,67,38"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						btn btn-primary
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						btn btn-primary
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<attribute
+					name="href"
+					type="System.String">
+						https://localhost:44359/Employee/Edit/11
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='localhost:44359']/body/div/?/?/table/tbody/tr[7]/td[5]/?/?/a[@innertext='Edit']
+				</path>
+				<robustPath>
+					/dom[@domain='localhost:44359']//tbody/tr[7]/td[5]/div/a[@innertext='Edit']
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="7be11b46-33ce-4651-bec0-c64999f58e20">
+				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
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="3e6c1c37-3772-4331-899a-110c06f72c65"
+	name="EMSTestRepository"
+	relativepath="EMSTestRepository.rxrep">
+		<codegen
+		classname="EMSTestRepository"
+		namespace="EMSTest">
+		</codegen>
+		<rootfolder
+		id="ea18a46b-6a6d-4323-a010-a61e6f74838f"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording1.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

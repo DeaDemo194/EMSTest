@@ -1,0 +1,299 @@
+﻿<repository
+id="3e6c1c37-3772-4331-899a-110c06f72c65"
+name="EMSTestRepository">
+	<codegen
+	classname="EMSTestRepository"
+	namespace="EMSTest">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="ea18a46b-6a6d-4323-a010-a61e6f74838f"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,nativewindow,wpfwin32element,wpfelement,wpfgroupelement"
+		capname="form"
+		id="7ee7912f-8cf6-4a4a-8a90-1648004593d5"
+		isrooted="True"
+		name="EMSMicrosoftVisualStudio"
+		refpath="/form[@title='EMS - Microsoft Visual Studio']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="text"
+			id="4804e6ad-823a-49fd-bf28-2f8742975722"
+			name="LaunchSite"
+			refimgid="6fb23f85-c098-4a97-912c-658130e89a5e"
+			refpath="/form[@title>'EMS - Microsoft Visual St']/container[@automationid='PART_ToolBarHost']/list/toolbar[2]/container[@automationid='PART_ToolBarPanel']/button[16]/menubar/menuitem/button/text[@automationid='Text']"
+			robustPath="/form[@title>'EMS - Microsoft Visual St']//container[@automationid='PART_ToolBarPanel']/button[16]/menubar/menuitem[@automationid='PART_FocusTarget']/button[@automationid='VsMenuControllerButton']/text[@automationid='Text']"
+			searchtimeout="30000ms">
+				/form[@title&gt;'EMS - Microsoft Visual St']/container[@automationid='PART_ToolBarHost']/list[@automationid='PART_ToolBarFrameControlContainer']/toolbar[2]/container[@automationid='PART_ToolBarPanel']/button[16]/menubar/menuitem[@automationid='PART_FocusTarget']/button[@automationid='VsMenuControllerButton']/text[@automationid='Text']
+			</item>
+			<basepath>
+				/form[@title&gt;'EMS - Microsoft Visual St']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJmSURBVDhPlZNdT9NQGMf7EfYR9hH2CYjceAWs
+wwtNWJzxThhr94ITELpo9EJNBoyxF8a6jW4dIlliYuIdiSjoHNa9wETdKl+ARXAIDM7jc7qSOC4M
+/pNfmr78f6fnnJb5n/D9WcHem1QrUTDply4f/lrGxltkGOyJk/I8gWL4lNdvtbMyscvLXtWon3aE
+Z2UzArwlg4IFKEXPoBg9xeOpwMiCalyZ3F1F4MXkbv2ihDNLJp5NNzg2AxQq+BxpgRJpESphbnQ9
+Un3WHCxPqGR54gc91qUxVZsjZxaNDq2cxrIGGeqJK0r4BBCihFvAWLufAkrg+X01gUB2vE6yY7VG
+cCjP2ftSqsMsgQarsYpSw2bomHwKnZDNuWOiCQa6nwAdEYsJFIA8RqnBg5uvYLgviYJFcPSlRfoM
+TWHuiBSwjLTf4FyQE1SDPF5T5NEapEe/g3TvGzy0vYY7vQs+rannY/AIEELpENDXc7ApJe4ua4JF
+71dYvLsDCc+2oDX15IO/SX62DTPwl4BnMzm6WLxFIvPOEqRQkBz5AqKnCnH3ll9rY94HDsmHWSRw
+SKfwDK53PQa+P+3HfSYowdWW9gTrSzY5sqNSQdyzDQvuCkrLOZFTDBszTbIRaJ4h7W28fTUATksW
+R9Y+FpXuPR1J9FaNCU+1QQUxlyYgQXteWZ9pAgVFgPOWjVhWnJYlKsGy3PEhiVzFFHNvNWKuMqAA
+pgfXybvpX0B5O3VA9Mfo/JdsF8vniblKLC1H+RKZQgEWaRnZ71jcfybEFW/pAnjj34c1/8/On+ky
+iXBl3+xwYW/N37jSvsIwfwBny8GbCc3MRQAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="9a1845d8-77d3-481e-933f-0a4d52a28028"
+		isrooted="True"
+		name="HomePageEMSWeb"
+		refpath="/dom[@domain='localhost:44359']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,h1tag"
+			capname="h1tag"
+			id="9ae2cdba-2908-4e71-bea1-0c150ce57fc2"
+			name="Welcome"
+			refimgid="f34f8e62-1e89-45c8-a740-06328f87a7c9"
+			refpath="/dom[@domain='localhost:44359']/body/div/main/div/h1[@innertext='Welcome']"
+			robustPath="/dom[@domain='localhost:44359']//h1[@innertext='Welcome']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:44359']/body/div//h1[@innertext='Welcome']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="020d41e0-333b-47c0-8564-faec39b6a88d"
+			name="BtnPrivacy"
+			refimgid="c28fe8c5-3e36-4b87-a4f5-62e18efbfaf5"
+			refpath="/dom[@domain='localhost:44359']/body/footer/div/a[@innertext='Privacy']"
+			robustPath="/dom[@domain='localhost:44359']//a[@innertext='Privacy']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:44359']/?/?/footer/?/?/a[@innertext='Privacy']
+			</item>
+			<item
+			addcaps="unknown,webelement,h1tag"
+			capname="h1tag"
+			id="3fe4ad12-a0db-45f1-ad88-4945d8983121"
+			name="PrivacyPolicy"
+			refimgid="a487529f-99c5-48e4-8915-b71ca442148a"
+			refpath="/dom[@domain='localhost:44359']/body/div/main/h1[@innertext='Privacy Policy']"
+			robustPath="/dom[@domain='localhost:44359']//h1[@innertext='Privacy Policy']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:44359']/body/div/?/?/h1[@innertext='Privacy Policy']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="2ce29ea3-21ef-46b6-a9f5-6d6a281e69b7"
+			name="Employee"
+			refimgid="2734280c-c650-4283-9a89-c971aed29743"
+			refpath="/dom[@domain='localhost:44359']/body/header/nav/div/div/ul/li[2]/a[@innertext='Employee']"
+			robustPath="/dom[@domain='localhost:44359']//a[@innertext='Employee']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:44359']/?/?/header/nav//ul/?/?/a[@innertext='Employee']
+			</item>
+			<item
+			addcaps="unknown,webelement,h2tag"
+			capname="h2tag"
+			id="fb525955-43ea-41f6-a4df-dc561c0e0ae3"
+			name="EmployeeList"
+			refimgid="a3ae5998-a027-4b0b-9135-28972da725a7"
+			refpath="/dom[@domain='localhost:44359']/body/div/main/div/div/div[1]/h2[@innertext='Employee List']"
+			robustPath="/dom[@domain='localhost:44359']//h2[@innertext='Employee List']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:44359']/body/div/main/div//h2[@innertext='Employee List']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="05f17aa9-e949-4078-8a07-e1c2d10a373b"
+			name="Name"
+			refimgid="12352c4a-ac57-4592-bbcc-fc60ad99f297"
+			refpath="/dom[@domain='localhost:44359']//input[#'Name']"
+			robustPath="/dom[@domain='localhost:44359']//input[#'Name']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:44359']//input[#'Name']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="869286d1-d871-492d-9b1a-b5fcec7c8976"
+			name="Position"
+			refimgid="e4eddf35-3b9a-4622-947e-fef2608c3e7a"
+			refpath="/dom[@domain='localhost:44359']//input[#'Position']"
+			robustPath="/dom[@domain='localhost:44359']//input[#'Position']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:44359']//input[#'Position']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="be3b40f0-2a06-4d10-8341-55013a4d75f8"
+			name="Salary"
+			refimgid="a8b1beb0-2513-4ba7-9765-e4b8456205ff"
+			refpath="/dom[@domain='localhost:44359']//input[#'Salary']"
+			robustPath="/dom[@domain='localhost:44359']//input[#'Salary']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:44359']//input[#'Salary']
+			</item>
+			<folder
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="a1283041-cfd1-4fde-b10c-2aba5716e18f"
+			isrooted="True"
+			name="CRUDOperations"
+			refpath="/dom[@domain='localhost:44359']/body/div"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,webelement,buttontag"
+				capname="buttontag"
+				id="60ed5e84-b82d-44a9-b897-fbff8b085650"
+				name="BtnAdd"
+				refimgid="a3221374-e7ab-4b67-a4e9-23c65c7eef83"
+				refpath="/dom[@domain='localhost:44359']/body/div/main/form/div/button[@innertext='Add']"
+				robustPath="/dom[@domain='localhost:44359']//button[@innertext='Add']"
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:44359']/body/div/?/?/form[@action='https://localhost:44359/Employee/Create']/?/?/button[@innertext='Add']
+				</item>
+				<item
+				addcaps="unknown,webelement,h2tag"
+				capname="h2tag"
+				id="09af02a2-cbdf-4ec4-84ed-c12b0413e423"
+				name="EmployeeAddedSuccessfully"
+				refimgid="3100909b-af58-43bb-856a-ae4da7494c5c"
+				refpath="/dom[@domain='localhost:44359']/body/div/main/h2[@innertext='Employee added successfully']"
+				robustPath="/dom[@domain='localhost:44359']//h2[@innertext>'Employee added successful']"
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:44359']/body/div/?/?/h2[@innertext&gt;'Employee added successful']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="9056611e-ad53-454f-a4da-b1eca3519354"
+				name="BtnAddNew"
+				refimgid="64f4b26f-2392-4f63-a9d6-b2bc04451b12"
+				refpath="/dom[@domain='localhost:44359']/body/div/main/div/div/div[2]/a[@innertext>'                Add New Employee']"
+				robustPath="/dom[@domain='localhost:44359']//a[@innertext>'                Add New Employee']"
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:44359']/body/div/main/div//a[@innertext&gt;'                Add New Employee']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="d773df68-92ac-4996-87d3-fb30c1cd8597"
+				name="BtnEdit"
+				refimgid="1b4ce371-111d-4bc3-8b19-08d425bcc935"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:44359']/body/div/?/?/table/tbody/tr[1]/td[5]/?/?/a[@innertext='Edit']
+				</item>
+				<item
+				addcaps="button,webelement,buttontag"
+				capname="buttontag"
+				id="0663873e-0b72-4de8-bdbb-0a913dc1f817"
+				name="BtnUpdate"
+				refimgid="612b02c5-28db-4abc-b38d-88d4f01b4b7d"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:44359']/body/div/?/?/form[@action='https://localhost:44359/Employee/Edit/6']/?/?/button[@innertext='Update']
+				</item>
+				<item
+				addcaps="unknown,webelement,h2tag"
+				capname="h2tag"
+				id="acc92e22-ee46-4041-b2af-364b435afd70"
+				name="EmployeeUpdatedSuccessfully"
+				refimgid="4432f103-282e-4497-a8c0-6465298da8e6"
+				refpath="/dom[@domain='localhost:44359']/body/div/main/h2[@innertext='Employee updated successfully']"
+				robustPath="/dom[@domain='localhost:44359']/body/div"
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:44359']/body/div/?/?/h2[@innertext&gt;'Employee updated successf']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="41aa6424-c69a-42e9-bffc-000336b5384d"
+				name="BtnDelete"
+				refimgid="9e50247a-5e33-4974-a93f-e70bf046c94f"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:44359']/body/div/?/?/table/tbody/tr[1]/td[5]/?/?/a[@innertext='Delete']
+				</item>
+				<item
+				addcaps="button,webelement,buttontag"
+				capname="buttontag"
+				id="d159d27c-39ee-47ea-8235-44666fc72d72"
+				name="BtnDelete1"
+				refimgid="8fbd2b63-d5a2-40c4-a0ec-f5c7f0cae12a"
+				refpath="/dom[@domain='localhost:44359']/body/div/main/form/div/button[@innertext='Delete']"
+				robustPath="/dom[@domain='localhost:44359']/body/div"
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:44359']/body/div/?/?/form[@action='https://localhost:44359/Employee/DeletePOST']/?/?/button[@innertext='Delete']
+				</item>
+				<item
+				addcaps="unknown,webelement,h2tag"
+				capname="h2tag"
+				id="5a820ea9-b8fb-4d4a-9841-1639c7f7f9ef"
+				name="EmployeeDeletedSuccessfully"
+				refimgid="71e551ce-3d90-4232-ba36-3b5bf555966b"
+				refpath="/dom[@domain='localhost:44359']/body/div/main/h2[@innertext='Employee deleted successfully']"
+				robustPath="/dom[@domain='localhost:44359']/body/div"
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:44359']/body/div/?/?/h2[@innertext&gt;'Employee deleted successf']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="4dfb190a-2581-4e43-9407-eba53591c4c8"
+				name="BtnEdit1"
+				refimgid="ba90d15a-5b96-41c8-a63b-d21fe7e851ab"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='localhost:44359']/body/div/?/?/table/tbody/tr[$TableIndex]/td[5]/?/?/a[@innertext='Edit']
+				</item>
+				<basepath>
+					/dom[@domain='localhost:44359']/body/div
+				</basepath>
+			</folder>
+			<basepath>
+				/dom[@domain='localhost:44359']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="af0b8505-53fc-4375-a04c-fddcdab9fcc9"
+		name="TableIndex">
+			7
+		</var>
+	</variables>
+</repository>

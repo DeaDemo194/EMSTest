@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{261B783C-9AE4-4C5D-A607-73DE02AC6C4F}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>EMSTest</RootNamespace>
+    <AssemblyName>EMSTest</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>3116394c-62f2-4d0f-9141-f1d440a848bb</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddEmployee.cs">
+      <BoundTo>7a9fde1b-fede-4f08-81fd-e2e67e8adaff</BoundTo>
+      <DependentUpon>AddEmployee.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>259f26d4-959c-4221-b086-82683ed26bc3</id>
+    </Compile>
+    <Compile Include="AddEmployee.UserCode.cs">
+      <BoundTo>7a9fde1b-fede-4f08-81fd-e2e67e8adaff</BoundTo>
+      <DependentUpon>AddEmployee.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3c9df2b1-f652-4a60-a4bf-3b463085bdd0</id>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>cb23bea3-c0e5-40c7-a3f3-45103e13fdcb</id>
+    </Compile>
+    <Compile Include="CheckEmployeePage.cs">
+      <BoundTo>462eed42-4d3a-4b2f-96d7-70a2a3c3451b</BoundTo>
+      <DependentUpon>CheckEmployeePage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>783f4668-66f9-40a4-adf7-b1280bdc19a6</id>
+    </Compile>
+    <Compile Include="CheckEmployeePage.UserCode.cs">
+      <BoundTo>462eed42-4d3a-4b2f-96d7-70a2a3c3451b</BoundTo>
+      <DependentUpon>CheckEmployeePage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dff862cd-143e-4b63-82a1-70831ebd4579</id>
+    </Compile>
+    <Compile Include="CheckPrivacyPage.cs">
+      <BoundTo>61d048bb-ffc5-4688-8761-b1bf0bb7421e</BoundTo>
+      <DependentUpon>CheckPrivacyPage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a82329ae-21d5-48d2-95a1-ed27cf22ed12</id>
+    </Compile>
+    <Compile Include="CheckPrivacyPage.UserCode.cs">
+      <BoundTo>61d048bb-ffc5-4688-8761-b1bf0bb7421e</BoundTo>
+      <DependentUpon>CheckPrivacyPage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fa2cee98-e72e-429a-9ca7-02d9eaf7a02b</id>
+    </Compile>
+    <Compile Include="DeleteEmployee.cs">
+      <BoundTo>1ea2fbe0-c59c-4086-bde2-6c19210edabf</BoundTo>
+      <DependentUpon>DeleteEmployee.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>43c22f3e-ee9e-473f-8da8-4028a8bb957d</id>
+    </Compile>
+    <Compile Include="DeleteEmployee.UserCode.cs">
+      <BoundTo>1ea2fbe0-c59c-4086-bde2-6c19210edabf</BoundTo>
+      <DependentUpon>DeleteEmployee.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>897e76f5-8f92-42bb-9253-50d692d33473</id>
+    </Compile>
+    <Compile Include="EditEmployee.cs">
+      <BoundTo>ca13fce7-4aae-4b98-8d3b-97afb37569f0</BoundTo>
+      <DependentUpon>EditEmployee.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2ba843db-723d-480a-94d6-56f197df3452</id>
+    </Compile>
+    <Compile Include="EditEmployee.UserCode.cs">
+      <BoundTo>ca13fce7-4aae-4b98-8d3b-97afb37569f0</BoundTo>
+      <DependentUpon>EditEmployee.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c454706e-7c4e-497f-b79b-be301cbfbedf</id>
+    </Compile>
+    <Compile Include="EMSTestRepository.cs">
+      <BoundTo>3116394c-62f2-4d0f-9141-f1d440a848bb</BoundTo>
+      <DependentUpon>EMSTestRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>2e84f3ff-e644-4623-bd08-d674c2969e0f</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>9b7a5691-dc5a-4f81-8b8a-be8ac20726da</id>
+    </Compile>
+    <Compile Include="OpenSite.cs">
+      <BoundTo>f7b79357-9a9c-4d70-a5d1-41a1002eca0b</BoundTo>
+      <DependentUpon>OpenSite.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3decda55-741b-40f2-b60f-76b8db848890</id>
+    </Compile>
+    <Compile Include="OpenSite.UserCode.cs">
+      <BoundTo>f7b79357-9a9c-4d70-a5d1-41a1002eca0b</BoundTo>
+      <DependentUpon>OpenSite.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e3e6a407-367c-4edc-ba60-cb65eede1b48</id>
+    </Compile>
+    <Compile Include="Recording1.cs">
+      <BoundTo>5244f7f9-483e-4860-b0ad-37b592567cde</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>402a40f5-6f2d-4884-b43e-981215f686cf</id>
+    </Compile>
+    <Compile Include="Recording1.UserCode.cs">
+      <BoundTo>5244f7f9-483e-4860-b0ad-37b592567cde</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e0b61c39-b2c7-4a5f-8f2d-f6d758ab4f7a</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AddEmployee.rxrec">
+      <BoundTo>3116394c-62f2-4d0f-9141-f1d440a848bb</BoundTo>
+      <id>7a9fde1b-fede-4f08-81fd-e2e67e8adaff</id>
+      <recordtableid>233aa790-790b-46d0-94a5-78e0191dc9f6</recordtableid>
+    </None>
+    <None Include="app.config">
+      <id>21f91558-b277-4f5a-9290-ee077b1b5f61</id>
+    </None>
+    <None Include="CheckEmployeePage.rxrec">
+      <BoundTo>3116394c-62f2-4d0f-9141-f1d440a848bb</BoundTo>
+      <id>462eed42-4d3a-4b2f-96d7-70a2a3c3451b</id>
+      <recordtableid>651865f2-35a5-4ddb-a479-b7046ad00ca4</recordtableid>
+    </None>
+    <None Include="CheckPrivacyPage.rxrec">
+      <BoundTo>3116394c-62f2-4d0f-9141-f1d440a848bb</BoundTo>
+      <id>61d048bb-ffc5-4688-8761-b1bf0bb7421e</id>
+      <recordtableid>b8f4ef32-f0d3-451c-9004-584982a9d6cd</recordtableid>
+    </None>
+    <None Include="DeleteEmployee.rxrec">
+      <BoundTo>3116394c-62f2-4d0f-9141-f1d440a848bb</BoundTo>
+      <id>1ea2fbe0-c59c-4086-bde2-6c19210edabf</id>
+      <recordtableid>b05853ee-699e-4246-8c2d-ad28648b2668</recordtableid>
+    </None>
+    <None Include="EditEmployee.rxrec">
+      <BoundTo>3116394c-62f2-4d0f-9141-f1d440a848bb</BoundTo>
+      <id>ca13fce7-4aae-4b98-8d3b-97afb37569f0</id>
+      <recordtableid>3b593539-22c4-4832-9e16-5754b8c31ff7</recordtableid>
+    </None>
+    <None Include="EMSTestRepository.rximg">
+      <BoundTo>3116394c-62f2-4d0f-9141-f1d440a848bb</BoundTo>
+      <DependentUpon>EMSTestRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>34ac612f-f244-48b6-8347-952e1c9ef7eb</id>
+    </None>
+    <None Include="EMSTestRepository.rxrep">
+      <id>3116394c-62f2-4d0f-9141-f1d440a848bb</id>
+      <repoid>3e6c1c37-3772-4331-899a-110c06f72c65</repoid>
+      <reporootid>ea18a46b-6a6d-4323-a010-a61e6f74838f</reporootid>
+    </None>
+    <None Include="OpenSite.rxrec">
+      <BoundTo>3116394c-62f2-4d0f-9141-f1d440a848bb</BoundTo>
+      <id>f7b79357-9a9c-4d70-a5d1-41a1002eca0b</id>
+      <recordtableid>8785675b-6a0c-4e13-b8d3-05d5140bac63</recordtableid>
+    </None>
+    <None Include="Recording1.rxrec">
+      <BoundTo>3116394c-62f2-4d0f-9141-f1d440a848bb</BoundTo>
+      <id>5244f7f9-483e-4860-b0ad-37b592567cde</id>
+      <recordtableid>4b10d795-54bd-414e-803a-0486af8a3d88</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EMSTest.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>a8164ba2-d668-4b97-8f5c-7c51981c8dcf</id>
+    </Content>
+    <Content Include="EMSTest.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>6a0309b2-5477-46a2-a590-40fd461ac392</id>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

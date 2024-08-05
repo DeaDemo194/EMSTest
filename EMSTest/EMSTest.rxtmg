@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc>
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="EMSTest"
+      id="6e0f9ec3-7116-4764-8e5d-bc9d126d60ab"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="EMSTest"
+      id="6e0f9ec3-7116-4764-8e5d-bc9d126d60ab"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>
